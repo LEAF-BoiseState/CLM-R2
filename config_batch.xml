@@ -1,14 +1,11 @@
-<?xml version="1.0"?>
-<config_batch version="2.0">
-  <batch_system type="slurm" MACH="r2"  >
-    <batch_submit>sbatch</batch_submit>
+<batch_system MACH="r2" type="slurm">
+  <batch_submit>sbatch</batch_submit>
     <submit_args>
       <arg flag="--time" name="$JOB_WALLCLOCK_TIME"/>
       <arg flag="-q" name="$JOB_QUEUE"/>
-      <arg flag="--account" name="$PROJECT"/>
     </submit_args>
     <queues>
-      <queue walltimemax="12:00:00" nodemin="2" nodemax="2" >leaf</queue>
+      <queue walltimemax="36:00:00" nodemin="2" nodemax="2">leaf</queue>
     </queues>
-  </batch_system>
-</config_batch>
+</batch_system>
+
