@@ -54,7 +54,7 @@
 	<!-- CCSM_CPRNC: location of the cprnc tool, compares model output in testing-->
     <CCSM_CPRNC>/home/cnash/clm5.0/cime/tools/cprnc/cprnc.F90</CCSM_CPRNC>
 	<!-- GMAKE: gnu compatible make tool, default is 'gmake' -->
-    <GMAKE>make</GMAKE>
+    <GMAKE>gmake</GMAKE>
 	<!-- GMAKE_J: optional number of threads to pass to the gmake flag -->
     <GMAKE_J>8</GMAKE_J>
 	<!-- BATCH_SYSTEM: batch system used on this machine,
