@@ -11,7 +11,7 @@
 		<SLIBS>
 			<append MPILIB="mpi-serial"> -mkl </append>
 		</SLIBS>
-		<LDFLAGS> -L/cm/shared/apps/netcdf/intel/64/4.1.1/lib -lmkl_core</LDFAGS>
+		<LDFLAGS> -L/cm/shared/apps/netcdf/intel/64/4.1.1/lib -lmkl_core</LDFLAGS>
 	</compiler>
 
 	<compiler MACH="r2" COMPILER="gnu">
