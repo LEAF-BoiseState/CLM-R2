@@ -1,7 +1,7 @@
 <config_compilers version="2.0">
 	<!-- Compilers for use with CLM on R2 = intel, gnu -->
 	<compiler MACH ="r2" COMPILER="intel">
-		<NETCDF_PATH>/usr/bin/netcdf/intel/64/4.4.1</NETCDF_PATH>
+		<NETCDF_PATH>/cm/shared/apps/netcdf/intel/64/4.4.1</NETCDF_PATH>
 		<MPICC> mpiicc </MPICC>
 		<MPICXX> mpiicpc </MPICXX>
 		<MPIFC> mpiifort </MPIFC>
@@ -14,7 +14,7 @@
 	</compiler>
 
 	<compiler MACH="r2" COMPILER="gnu">
-		<NETCDF_PATH>/usr/bin/netcdf/intel/64/4.4.1</NETCDF_PATH>
+		<NETCDF_PATH>/cm/shared/apps/netcdf/intel/64/4.4.1</NETCDF_PATH>
 		<MPICC> mpicc </MPICC> 
 		<MPICXX> mpicxx </MPICXX>
 		<MPIFC> mpif90 </MPIFC> 
