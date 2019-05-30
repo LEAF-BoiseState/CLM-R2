@@ -18,7 +18,7 @@
     <COMPILERS>intel,gnu</COMPILERS>
 	<!-- MPILIBS: mpilibs supported on this machine, comma seperated list,
 	     first is default, mpi-serial is assumed and not required in this list-->
-    <MPILIBS>mpt,openmpi,impi</MPILIBS>
+    <MPILIBS>mpi</MPILIBS>
 	<!-- PROJECT: A project or account number used for batch jobs
          This value is used for directory names. If different from
          actual accounting project id, use CHARGE_ACCOUNT
@@ -50,7 +50,7 @@
       keeps it on disk-->
     <DOUT_S_ROOT>/home/cnash/cesm/scratch/archive/$CASE</DOUT_S_ROOT>
 	<!-- BASELINE_ROOT:  Root directory for system test baseline files -->
-    <BASELINE_ROOT>/home/cnash/cesm/cesm_baselines</BASELINE_ROOT>
+    <BASELINE_ROOT>/home/cnash/cesm/cesm_baseline</BASELINE_ROOT>
 	<!-- CCSM_CPRNC: location of the cprnc tool, compares model output in testing-->
     <CCSM_CPRNC>/home/cnash/clm5.0/cime/tools/cprnc/cprnc.F90</CCSM_CPRNC>
 	<!-- GMAKE: gnu compatible make tool, default is 'gmake' -->
@@ -82,21 +82,22 @@
       <executable>mpirun</executable>
       <!-- arguments to the mpiexec command, the name attribute here is ignored-->
       <arguments>
+	<arg name="ntasks">-np{{total_tasks}}</arg>
 	<arg name="labelstdout">-p "%g:"</arg>
 	<arg name="threadplacement"> omplace </arg>
       </arguments>
     </mpirun>
     <mpirun mpilib="mpi-serial">
-      <executable/>
+      <executable></executable>
     </mpirun>
     <module_system type="none">
-<!--      <init_path lang="perl">/usr/bin/perl</init_path>
+<!--  <init_path lang="perl">/usr/bin/perl</init_path>
       <init_path lang="python">/cm/shared/apps/python/intel/intelpython35/bin/python</init_path>
       <init_path lang="csh">/usr/bin/csh</init_path>
       <init_path lang="sh">/usr/bin/sh</init_path>
       <cmd_path lang="perl">/usr/bin/modulecmd perl</cmd_path>
-     <cmd_path lang= "python"> /usr/bin/modulecmd python</cmd_path>
-    <cmd_path lang="sh">module</cmd_path>
+      <cmd_path lang= "python"> /usr/bin/modulecmd python</cmd_path>
+      <cmd_path lang="sh">module</cmd_path>
       <cmd_path lang="csh">module</cmd_path>
       <modules>
 	<command name="purge"/>
