@@ -5,7 +5,7 @@ _Steps to build CLM on Boise State's R2 cluster._
 
 ## File Structure in R2
 ```bash
-$HOME
+/home/<username> ($HOME)
 ├── .cime
 │   ├── config_compilers.xml
 │   ├── config_batch.xml
@@ -14,9 +14,9 @@ $HOME
 ├── clm5.0*
 │   ├── bld*
 │   ├── cime*
-|   |    └── tools*
-|   |   |    └── cprnc*
-|   |   |   |    └── cprnc.F90* ($CCSM_CPRNC)
+|   │    └── tools*
+|   │   │    └── cprnc*
+|   │   │   │    └── cprnc.F90* ($CCSM_CPRNC)
 │   ├── cime_config
 │   ├── CODE_OF_CONDUCT.md
 │   ├── components
@@ -38,17 +38,21 @@ $HOME
 │   └── tools
 ├── cesm
 │   ├── scratch ($CIME_OUTPUT_ROOT)
-│   |   ├── archive
-|   │   |   └── $CASE* ($DOUT_S_ROOT)
-│   |   └── build/run*
-|   │   |   └── run*
-│   ├── inputdata ($DIN_LOC_ROOT)
-|   │   |   └── atm
-|   |   │   |   └── wrf ($DIN_LOC_ROOT_CLMFORC)
+│   │   ├── archive
+|   │   │   └── $CASE* ($DOUT_S_ROOT)
+│   │   └── build/run*
+|   │   │   └── run*
 │   └── cesm_baselines ($BASELINE_ROOT)
 └── clmcases
+
+/scratch/leaf/share/CESM/
+├── inputdata ($DIN_LOC_ROOT)
+│   ├── atm 
+│   │   └── wrf ($DIN_LOC_ROOT_CLMFORC)
+
 ```
 >*Files with an '`*`' next to them will be created automatically by CLM and do not need to be made*
+>*Path variables in parentheses are defined in config_machines.xml. They can thus be changed, but shouldn't need to be.*
 
 ### README.md File Contents
 #### 1. [Overview](#1-overview-1)
