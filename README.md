@@ -51,7 +51,7 @@ _Steps to build CLM on Boise State's R2 cluster._
 │   │   └── wrf ($DIN_LOC_ROOT_CLMFORC)
 
 ```
->*Files with an '`*`' next to them will be created automatically by CLM and do not need to be made*
+>*Files with an '`*`' next to them will be created automatically by CLM and do not need to be made. All other directories will need to be created manually.*
 >*Path variables in parentheses are defined in config_machines.xml. They can thus be changed, but shouldn't need to be.*
 
 ### README.md File Contents
