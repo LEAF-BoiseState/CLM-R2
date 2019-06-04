@@ -184,9 +184,13 @@ This repository is a collection of scripts to build the Community Land Model (CL
   <br>
    
 #### 3. Links
-  * <sup><a name="1">1</a></sup> [CLM5.0 Tutorial - Danica Lombardozzi](http://www2.mmm.ucar.edu/wrf/users/) 
-  * - a tutorial put together by Danica Lombardozzi for the CLM 5.0 Tutorial in 2019 that has greater detail about the steps outlined above
-    <br>
+  * <sup><a name="1">1</a></sup> [CLM5.0 Tutorial - Danica Lombardozzi](https://leaf-boisestate.atlassian.net/wiki/spaces/LTH/pages/813727746/Running+CLM+on+R2?preview=/813727746/813793299/2019CLMTutorial_practical1-lombardozzi.pdf) 
+    >* A tutorial put together by Danica Lombardozzi for the CLM 5.0 Tutorial in 2019 that has greater detail about the steps outlined above
+  * <sup><a name="1">1</a></sup> [CESM Documentation: Introduction](https://escomp.github.io/cesm/release-cesm2/introduction.html) 
+    >* A step-by-step guide to installing CESM and building cases. Assumes you are on NCAR's cluster. 
+  * <sup><a name="1">1</a></sup> [Porting CIME based models](https://docs.google.com/presentation/d/1min2MUtyqXdjSYLTZOZaU8Iv2FQVWOBGXDL0uOcxqh8/edit#slide=id.p) 
+    >* A guide to porting CIME based models by Jim Edwards. 
+  <br>
   <br>
   <br>
   <br>
