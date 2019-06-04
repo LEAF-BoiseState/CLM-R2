@@ -163,12 +163,18 @@ This repository is a collection of scripts to build the Community Land Model (CL
       ```bash
       $ cd ~/clmcases/I1850CLm50_001
       ```
-  * Issue the following command to set-up your case
+      
+  * Set up your case using the following command:
   
-        ```bash
+      ```bash
       $ ./case.setup
       ```
       
+  * Build your case using the following command:
+
+      ```bash
+      $ ./case.build
+      ```
   <br>
   <br>
    
