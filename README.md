@@ -1,6 +1,6 @@
 # CLM-R2
 
-_Collection of scripts to build CLM on Boise State's R2 cluster._
+_Steps to build CLM on Boise State's R2 cluster._
 <br>
 
 ## File Structure
