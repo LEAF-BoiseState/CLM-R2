@@ -55,7 +55,7 @@ $HOME
 #### 2. [Quick Start Guide](#2-quick-start-guide-1)
 ###### &nbsp;&nbsp;&nbsp; 2.1 [Clone CLM Repository and config files](#21-clone-clm-repository-and-config-files)
 ###### &nbsp;&nbsp;&nbsp; 2.2 [Load necessary modules](#22-load-necessary-modules)
-###### &nbsp;&nbsp;&nbsp; 2.3 [Create, built and submit a case](#23-create,-build-and-submit-a-case)
+###### &nbsp;&nbsp;&nbsp; 2.3 [Create, build and submit a case](#23-create,-build-and-submit-a-case)
 ####  3. [Links](#4-links-1)
 ---
 <br>
@@ -150,7 +150,7 @@ This repository is a collection of scripts to build the Community Land Model (CL
   <br>
   <br>
   
-#### 2.3 Create, built and submit a case
+#### 2.3 Create, build and submit a case
   * From your home directory, create a new directory called '`clmcases`'
     
       ```bash
