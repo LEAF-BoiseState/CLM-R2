@@ -3,16 +3,20 @@
 _Steps to build CLM on Boise State's R2 cluster._
 <br>
 
-## File Structure
+## File Structure in R2
 ```bash
 $HOME
 ├── .cime
 │   ├── config_compilers.xml
 │   ├── config_batch.xml
 │   └── config_machine.xml
-├── clm5.0
-│   ├── bld
-│   ├── cime
+├── .cesmproj
+├── clm5.0*
+│   ├── bld*
+│   ├── cime*
+|   |    └── tools*
+|   |   |    └── cprnc*
+|   |   |   |    └── cprnc.F90* ($CCSM_CPRNC)
 │   ├── cime_config
 │   ├── CODE_OF_CONDUCT.md
 │   ├── components
@@ -33,19 +37,18 @@ $HOME
 │   ├── test
 │   └── tools
 ├── cesm
-│   ├── scratch
+│   ├── scratch ($CIME_OUTPUT_ROOT)
 │   |   ├── archive
-|   │   |   └── $CASE
-│   |   └── build/run
-|   │   |   └── run
-│   ├── inputdata
+|   │   |   └── $CASE* ($DOUT_S_ROOT)
+│   |   └── build/run*
+|   │   |   └── run*
+│   ├── inputdata ($DIN_LOC_ROOT)
 |   │   |   └── atm
-|   |   │   |   └── wrf
-│   └── cesm_baselines
-├── clmcases
-└── .cesmproj
+|   |   │   |   └── wrf ($DIN_LOC_ROOT_CLMFORC)
+│   └── cesm_baselines ($BASELINE_ROOT)
+└── clmcases
 ```
-
+>*Files with an '`*`' next to them will be created automatically by CLM and do not need to be made*
 
 ### README.md File Contents
 #### 1. [Overview](#1-overview-1)
