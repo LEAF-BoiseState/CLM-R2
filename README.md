@@ -51,8 +51,8 @@ $HOME
 #### 1. [Overview](#1-overview-1)
 #### 2. [Quick Start Guide](#2-quick-start-guide-1)
 ###### &nbsp;&nbsp;&nbsp; 2.1 [Clone CLM Repository and config files](#21-clone-clm-repository-and-config-files)
-###### &nbsp;&nbsp;&nbsp; 2.2 [Load Modules and set Environmental Variables](#22-cload-modules-and-set-environmental-variables)
-###### &nbsp;&nbsp;&nbsp; 2.3 [Create, built and submit a case](#23-create-build-and-submit-a-case)
+###### &nbsp;&nbsp;&nbsp; 2.2 [Load necessary modules](#22-load-necessary-modules)
+###### &nbsp;&nbsp;&nbsp; 2.3 [Create, built and submit a case](#23-create,-build-and-submit-a-case)
 ####  3. [Links](#4-links-1)
 ---
 <br>
