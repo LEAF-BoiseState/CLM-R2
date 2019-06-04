@@ -86,6 +86,13 @@ This repository is a collection of scripts to build the Community Land Model (CL
   * Next be prompted for your github `username` and `password`.
   * If authentication is successful, `git` will transfer all the contents of the repository to your computer,
   then you will have a new directory, `clm5.0/`, in your current working directory.
+  * Navigate into the `clm5.0` folder and checkout the externals (e.g. FATES, MOSART)
+  
+    ```bash
+    $ cd clm5.0
+    $ ./manage_externals/checkout_externals
+    ```
+    
   * In your same current working directory, make a new directory called '.cime'
   
     ```bash
