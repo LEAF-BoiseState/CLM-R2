@@ -130,8 +130,13 @@ This repository is a collection of scripts to build the Community Land Model (CL
   <br>
 
 #### 2.2 Load necessary modules
-  * xxxx list out necessary modules once compile works xxxx
+  * Load the following modules
   
+  ```bash
+  $ module load intel/compiler/64/2017/17.0.7 intel/mkl/64/2017/7.259 intel/mpi/64/2017/7.259 python/intel/2.7 netcdf/intel/64/4.4.1
+  ```
+  
+  * xxxx may need to compile in gnu! xxxx
   <br>
   <br>
   
